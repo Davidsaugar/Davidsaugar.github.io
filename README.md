@@ -1,65 +1,63 @@
-<img src="assets/theme_logo.svg" class="detail_header">
+# Jekyll Incorporated
+Modern Jekyll based blog. Great for companies, products or anything. See live at [blog.sendtoinc.com](http://blog.sendtoinc.com)
 
-# jekyll-shell-theme
+## Installation & Usage
+    bundle install
+    jekyll serve --watch
 
-**Jekyll Shell Theme** is a light-weight customizable one-column jekyll theme that gives off:
+_Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
+    
+## Configuration
+Edit: _config.yml (general options), main.css (theme colors &amp; fonts)
 
-- Hackery Vibes
-- Shell Nostalgia
-- Code, code and more code
-
-See an example of this theme in action on the [theme's official site](https://tareqdandachi.github.io/jekyll-shell-theme).
-
-## Installation
-
-### Gem-based method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-shell-theme"
+```
+jekyll-incorporated/
+├── _config.yml
+├── _assets/
+    ├── stylesheets/
+        ├── main.scss
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+_Note: when editing _config.yml, you need to restart jekyll to see the changes.__
 
-```yaml
-theme: jekyll-shell-theme
+    
+## Publish to Github Pages
+1. Add your domain to _CNAME_
+2. Edit your repo address at _Rakefile_
+    
+Run rake task. **NOTE: It will deploy the generated site to _gh-pages_ branch overwriting it**    
+``` 
+rake site:publish
 ```
 
-And then execute:
+## Usage examples
 
-    $ bundle
+* Adroll Engineering http://tech.adroll.com/
+* Brace.io blog http://blog.brace.io/
+* Spark.io blog http://blog.spark.io/
+* Department of Better Technology http://blog.dobt.co/
 
-Or install it yourself as:
+## Authors
 
-    $ gem install jekyll-shell-theme
+Originally build for [sendtoinc.com](https://sendtoinc.com), your workspace for sharing and organizing knowledge
 
-### Remote theme method
+**Karri Saarinen**
 
-Make sure your `Gemfile` contains the `github-pages` gem and **not** the `jekyll-shell-theme` gem.
++ [http://twitter.com/karrisaarinen](http://twitter.com/karrisaarinen)
++ [http://github.com/ksaa](http://github.com/ksaa)
 
-Then add `remote_theme: "tareqdandachi/jekyll-shell-theme"` to your `_config.yml` file.
-*Remove* any other `theme:` or `remote_theme:` entry.
+**Jori Lallo**
 
-*For an example of what a config file could look like, look at [example-config.yml](https://github.com/tareqdandachi/jekyll-shell-theme/blob/master/example-config.yml)*
++ [http://twitter.com/jorilallo](http://twitter.com/jorilallo)
++ [http://github.com/jorde](http://github.com/jorilallo)
 
-## Usage
+## Todo:
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
++ Documentation
++ Less config files
++ Better deploy scripts
 
-## Contributing
+## Copyright and license
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/tareqdandachi/jekyll-shell-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Copyright 2013 Kippt Inc. under [The MIT License ](LICENSE)
 
-## Development
-
-Everyone is welcome to fork this repo and modify the code. To set up your environment to develop this theme, run `bundle install`.
-
-To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using the theme. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-shell-theme.gemspec` accordingly.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
