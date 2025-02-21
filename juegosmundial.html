@@ -24,11 +24,9 @@ category: deportes, videojuegos, eSports
 <h2>Ejemplos de juegos mundialmente conocidos</h2>
 
 <ul>
-  {% for example in site.data.juegosmundial %}
-    <li>
-      <strong>{{ example.name }}</strong> (<span>{{ example.type }}</span>) - {{ example.description }}
-    </li>
-  {% else %}
-    <li>No se encontraron juegos.</li>
-  {% endfor %}
-</ul>
+    {% for example in site.data.juegosmundialmenteconocidos %}
+      <li>
+        <strong>{{ example.name }}</strong> (<span>{{ example.type }}</span>) - {{ example.description }}
+      </li>
+    {% endfor %}
+  </ul>
