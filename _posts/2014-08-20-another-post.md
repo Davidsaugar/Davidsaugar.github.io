@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum Dolor Sit Amet
+title: Shigeru Miyamoto
 featured: images/pic01.jpg
 layout: post
 ---
