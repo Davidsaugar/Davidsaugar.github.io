@@ -28,12 +28,6 @@
             padding: 20px;
             margin: 10px;
         }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -41,7 +35,15 @@
         }
         .gallery .image {
             width: 48%;
+            height: 250px;  /* Asegura que todas las imágenes tengan la misma altura */
             margin-bottom: 20px;
+            overflow: hidden;  /* Esto es para ocultar cualquier parte que sobresalga */
+            border-radius: 8px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Esto asegura que la imagen mantenga sus proporciones sin distorsionarse */
         }
         .curiosidades ul {
             list-style-type: none;
@@ -88,11 +90,15 @@
             border-radius: 8px;
             margin-top: 20px;
         }
-        /* Estilo para los encabezados h2 */
-        section h2 {
+
+        /* Clase para los títulos sin usar h2 */
+        .section-title {
             margin-top: 15px;  /* Margen superior */
             margin-bottom: 15px; /* Margen inferior */
             color: #ff9900;
+            font-size: 2em; /* Tamaño de fuente similar al h2 */
+            padding-left: 10px; /* Espacio desde el borde izquierdo */
+            padding-right: 10px; /* Espacio desde el borde derecho */
         }
     </style>
 </head>
@@ -103,7 +109,7 @@
     </header>
 
     <section>
-        <h2>Introducción al Juego</h2>
+        <div class="section-title">Introducción al Juego</div>
         <p class="game-description">
             "Red Dead Redemption 2" es una obra maestra del género de acción y aventura desarrollada por Rockstar Games. Ambientado en el 1899, en el ocaso de la época de los forajidos, los jugadores toman el control de Arthur Morgan, un miembro de la banda Van der Linde. El juego te permite explorar un vasto mundo abierto, repleto de peligros, misiones, secretos y una historia profundamente emocional. 
             <br><br>
@@ -112,7 +118,7 @@
     </section>
 
     <section class="gallery">
-        <h2>Galería de Imágenes</h2><br><br><br>
+        <div class="section-title">Galería de Imágenes</div><br><br><br>
         <div class="image">
             <img src="/assets/images/rdr21.jpg" alt="Red Dead Redemption 2 Screenshot 1">
         </div>
@@ -128,7 +134,7 @@
     </section>
 
     <section class="curiosidades">
-        <h2>Curiosidades de Red Dead Redemption 2</h2>
+        <div class="section-title">Curiosidades de Red Dead Redemption 2</div>
         <ul>
             <li><strong>Curiosidad 1:</strong> El juego presenta un ciclo de vida dinámico que cambia con las estaciones. Durante el invierno, las condiciones climáticas afectan cómo el personaje se desplaza, lo que hace que cada temporada sea única.</li>
             <li><strong>Curiosidad 2:</strong> El sistema de honor en RDR2 es crucial. Tu comportamiento influye en cómo la gente te ve, desde las interacciones cotidianas hasta el trato que recibes de la ley.</li>
@@ -139,13 +145,13 @@
     </section>
 
     <section class="game-map">
-        <h2>El Mapa de Red Dead Redemption 2</h2>
+        <div class="section-title">El Mapa de Red Dead Redemption 2</div>
         <p>El mundo abierto de RDR2 es impresionante, con más de 1000 kilómetros cuadrados para explorar. El mapa está lleno de detalles: desde montañas nevadas hasta llanuras desérticas y densos bosques. Aquí puedes ver un mapa general del juego.</p>
         <img src="/assets/images/mapardr2.jpg" alt="Mapa de Red Dead Redemption 2">
     </section>
 
     <section class="important-characters">
-        <h2>Personajes Principales</h2><br><br><br>
+        <div class="section-title">Personajes Principales</div><br><br><br>
         <div class="character-card">
             <h3>Arthur Morgan</h3>
             <img src="/assets/images/arthur.jpg" alt="Arthur Morgan">
