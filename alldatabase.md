@@ -11,6 +11,11 @@ layout: page
 title: "Negocios y Juegos"
 category: negocios, juegos, simulación
 ---
+<style>
+  body {
+    background-color: #ffffff; 
+  }
+</style>
 
 <h2>Juegos mundialmente conocidos</h2>
 
