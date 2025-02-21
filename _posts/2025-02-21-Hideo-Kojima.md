@@ -1,6 +1,6 @@
 ---
 title: Hideo Kojima
-featured: images/pic02.jpg
+featured: images/Hideo Kojima.jpg
 layout: post
 ---
 

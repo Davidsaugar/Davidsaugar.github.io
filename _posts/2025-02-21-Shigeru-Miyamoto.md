@@ -1,6 +1,6 @@
 ---
 title: Shigeru Miyamoto
-featured: images/pic01.jpg
+featured: images/Shigeru Miyamoto.jpg
 layout: post
 ---
 
