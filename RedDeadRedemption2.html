@@ -32,8 +32,10 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            justify-content: space-between; /* Asegura que las imágenes se distribuyan bien */
+            justify-content: space-between;
+            text-align: center; /
         }
+        
         .gallery .image {
             width: 48%; /* Asegura que dos imágenes quepan en la misma fila */
             height: 300px;  /* Fija una altura constante para las imágenes */
@@ -102,6 +104,14 @@
             padding-left: 10px; /* Espacio desde el borde izquierdo */
             padding-right: 10px; /* Espacio desde el borde derecho */
         }
+        .section-title1 {
+            margin-top: 15px;  /* Margen superior */
+            margin-bottom: 15px; /* Margen inferior */
+            color: #ff9900;
+            font-size: 2em; /* Tamaño de fuente similar al h2 */
+            padding-left: 30%; /* Espacio desde el borde izquierdo */
+
+        }
     </style>
 </head>
 <body>
@@ -120,7 +130,7 @@
     </section>
 
     <section class="gallery">
-        <div class="section-title">------------------------------------  Galería de Imágenes  ------------------------------------</div>
+        <div class="section-title1">Galería de Imágenes</div>
         <div class="image">
             <img src="/assets/images/rdr21.jpg" alt="Red Dead Redemption 2 Screenshot 1">
         </div>
