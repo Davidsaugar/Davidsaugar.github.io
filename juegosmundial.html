@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Juegos Mundialmente Conocidos"
+category: deportes, videojuegos, eSports
+---
+
+<style>
+  body {
+    color: white; 
+    background-color: #333; 
+  }
+  h1, h2 {
+    color: white; 
+  }
+  ul li {
+    color: white;
+  }
+</style>
+
+<h1>{{ page.title }}</h1>
+
+<p>Los juegos trascienden fronteras, uniendo a personas de diferentes culturas y países. Desde los deportes tradicionales hasta los videojuegos más populares, los juegos son una plataforma global para compartir experiencias, competir y colaborar. Algunos juegos se han convertido en verdaderos fenómenos mundiales, creando comunidades masivas que comparten una pasión común sin importar el lugar en el que se encuentren.</p>
+
+<h2>Ejemplos de juegos mundialmente conocidos</h2>
+
+<ul>
+  {% for example in site.data.juegosmundial %}
+    <li>
+      <strong>{{ example.name }}</strong> (<span>{{ example.type }}</span>) - {{ example.description }}
+    </li>
+  {% endfor %}
+</ul>

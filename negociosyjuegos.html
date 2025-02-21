@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Aprende a Protegerte con Juegos"
-category: seguridad, juegos, protección
+title: "Negocios y Juegos"
+category: negocios, juegos, simulación
 ---
 
 <style>
@@ -10,23 +10,23 @@ category: seguridad, juegos, protección
     background-color: #333; 
   }
   h1, h2 {
-    color: white;
+    color: white; 
   }
   ul li {
-    color: white;
+    color: white; 
   }
 </style>
 
 <h1>{{ page.title }}</h1>
 
-<p>Los juegos no solo son entretenimiento, también pueden ser una excelente herramienta educativa para enseñarnos a protegernos en situaciones cotidianas. Desde la seguridad en línea hasta la autoprotección física, existen juegos diseñados para sensibilizarnos sobre diversos riesgos y darnos las habilidades necesarias para enfrentarlos de forma eficaz, todo mientras aprendemos jugando.</p>
+<p>En el mundo actual, los negocios y los juegos están más conectados de lo que imaginamos. A través de simulaciones y dinámicas lúdicas, los empresarios pueden entrenar sus habilidades estratégicas y aprender a tomar decisiones rápidas en entornos de alto riesgo. Además, los juegos permiten una forma innovadora de incentivar la creatividad y la colaboración en equipo dentro de las organizaciones.</p>
 
 <h2>Ejemplos de juegos relacionados</h2>
 
 <ul>
-  {% for example in site.data.aprendeaprotegerteconjuegos %}
+  {% for example in site.data.negociosyjuegos %}
     <li>
-      <strong>{{ example.name }}</strong> (<span>{{ example.type }}</span>) - {{ example.description }}
+      <strong>{{ example.name }}</strong> ({{ example.type }}) - {{ example.description }}
     </li>
   {% endfor %}
 </ul>
