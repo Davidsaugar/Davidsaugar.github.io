@@ -1,4 +1,4 @@
-/* Establecer el fondo estático de la página */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,14 +10,14 @@ body {
     text-align: center;
 }
 
-/* Contenedor principal */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Estilo para el encabezado */
+
 header {
     margin-bottom: 50px;
 }
@@ -34,7 +34,7 @@ header p {
     font-weight: 300;
 }
 
-/* Sección de imágenes */
+
 .images {
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@ header p {
     transition: transform 0.3s ease;
 }
 
-/* Efecto hover para las imágenes */
+
 .image:hover {
     transform: scale(1.05);
 }
@@ -63,7 +63,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Sección de texto adicional */
+
 .text-section {
     margin-bottom: 50px;
 }
@@ -81,7 +81,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo para el pie de página */
+
 footer {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
