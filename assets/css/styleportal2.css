@@ -1,0 +1,90 @@
+/* Establecer el fondo estático de la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://th.bing.com/th/id/OIP.7RD1DEocBr39gyrfEI6wxwHaEo?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el encabezado */
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+/* Sección de imágenes */
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.image-box {
+    width: 30%;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las imágenes */
+.image:hover {
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Sección de texto adicional */
+.text-section {
+    margin-bottom: 50px;
+}
+
+.text-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #ccc;
+    text-align: center;
+}
