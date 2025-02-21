@@ -7,10 +7,10 @@ category: deportes, videojuegos, eSports
 <style>
   body {
     color: white; 
-    background-color: #333; 
+    background-color: #333;
   }
   h1, h2 {
-    color: white; 
+    color: white;
   }
   ul li {
     color: white;
@@ -28,5 +28,7 @@ category: deportes, videojuegos, eSports
     <li>
       <strong>{{ example.name }}</strong> (<span>{{ example.type }}</span>) - {{ example.description }}
     </li>
+  {% else %}
+    <li>No se encontraron juegos.</li>
   {% endfor %}
 </ul>
