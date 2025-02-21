@@ -1,0 +1,18 @@
+---
+layout: page
+title: "Negocios y Juegos"
+category: negocios, juegos, simulación
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>{{ site.data.negociosyjuegos.description }}</p>
+
+<h2>Ejemplos de juegos relacionados</h2>
+<ul>
+  {% for example in site.data.negociosyjuegos.examples %}
+    <li>
+      <strong>{{ example.name }}</strong> ({{ example.type }}) - {{ example.description }}
+    </li>
+  {% endfor %}
+</ul>

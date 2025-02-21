@@ -1,0 +1,54 @@
+[
+      {
+        "name": "Cybersecurity Lab",
+        "type": "Simulador educativo",
+        "description": "Juego que enseña conceptos clave sobre seguridad informática y cómo protegerse de amenazas cibernéticas."
+      },
+      {
+        "name": "SafeKidZone",
+        "type": "Juego educativo",
+        "description": "Juego dirigido a niños para enseñarles sobre la seguridad en línea y cómo protegerse de peligros virtuales."
+      },
+      {
+        "name": "Juegos de autoprotección",
+        "type": "Simulador interactivo",
+        "description": "Simuladores de situaciones de defensa personal donde los jugadores aprenden técnicas de autoprotección."
+      },
+      {
+        "name": "First Aid Trainer",
+        "type": "Juego de simulación",
+        "description": "Aplicación de entrenamiento de primeros auxilios que enseña cómo actuar en situaciones de emergencia."
+      },
+      {
+        "name": "Juegos de seguridad vial",
+        "type": "Simulador de conducción",
+        "description": "Simuladores de tráfico que enseñan reglas de seguridad vial y cómo reaccionar ante accidentes."
+      },
+      {
+        "name": "Escape Room de Seguridad",
+        "type": "Escape room",
+        "description": "Escape rooms diseñados para enseñar sobre medidas de seguridad en diversos contextos."
+      },
+      {
+        "name": "Juegos de prevención de desastres",
+        "type": "Simulador educativo",
+        "description": "Juegos que enseñan cómo reaccionar ante desastres naturales y otras emergencias."
+      },
+      {
+        "name": "Juegos de seguridad en el hogar",
+        "type": "Simulación interactiva",
+        "description": "Juegos donde los jugadores deben identificar riesgos y tomar medidas de seguridad dentro del hogar."
+      },
+      {
+        "name": "Phishing Detectives",
+        "type": "Juego educativo",
+        "description": "Juego diseñado para enseñar a detectar correos electrónicos fraudulentos y otras amenazas de phishing."
+      },
+      {
+        "name": "Juegos de prevención de acoso escolar",
+        "type": "Simulador interactivo",
+        "description": "Juegos interactivos que ayudan a niños y adolescentes a identificar y prevenir el acoso escolar."
+      }
+]
+  
+  
