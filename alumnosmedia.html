@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h2>Media de los alumnos</h2>
+
+<ul>
+    {% for example in site.data.listadoalumno %}
+      <li>
+        <strong>{{ example.name }}</strong> (<span>{{ example.nota1 }}</span>)(<span>{{ example.nota2 }}</span>)(<span>{{ example.nota3 }}</span>)
+      </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
