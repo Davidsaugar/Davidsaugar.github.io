@@ -1,3 +1,8 @@
+---
+layout: default
+title: Notas de Alumnos
+---
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,25 +17,15 @@
 </head>
 <body>
     <h1>Notas de Alumnos</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Nota 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for alumno in site.data.listadoalumnos %}
-            <tr>
-                <td>{{ alumno.nombre }}</td>
-                <td class="{% if alumno.nota1 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</td>
-                <td class="{% if alumno.nota2 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</td>
-                <td class="{% if alumno.nota3 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+
+    {% for alumno in site.data.listadoalumnos %}
+        <p>
+            <strong>{{ alumno.nombre }}</strong> -  
+            Nota 1: <span class="{% if alumno.nota1 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</span>,  
+            Nota 2: <span class="{% if alumno.nota2 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</span>,  
+            Nota 3: <span class="{% if alumno.nota3 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</span>
+        </p>
+    {% endfor %}
+
 </body>
 </html>
