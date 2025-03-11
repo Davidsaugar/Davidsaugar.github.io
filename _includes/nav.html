@@ -3,12 +3,10 @@
 		<ul>
 			{% assign current = page.url | downcase | split: '/' %}
 			<li {% if current[1] == 'alumnos.html' %}class='current'{% endif %}><a href="/alumnos.html">Alumnos</a></li> <br>
-			<li {% if current[1] == 'alumnosmedia.html' %}class='current'{% endif %}><a href="/alumnosmedia.html">Media_alumnos</a></li>
+			<li {% if current[1] == 'alumnosmedia.html' %}class='current'{% endif %}><a href="/alumnosmedia.html">Media_alumnos</a></li> <br>
 			<li {% if current[1] == 'deletealumno.html' %}class='current'{% endif %}><a href="/deletealumno.html">Delete_Alumno</a></li> <br>
 			<li {% if current[1] == 'insertalumno.html' %}class='current'{% endif %}><a href="/insertalumno.html">Insert_alumno</a></li> <br>
 			<li {% if current[1] == 'selectalumno.html' %}class='current'{% endif %}><a href="/selectalumno.html">Select_alumno</a></li> <br>
-			<li {% if current[1] == 'mejorpeoralumno.html' %}class='current'{% endif %}><a href="/mejorpeoralumno.html">MejoryPeor_alumno</a></li> <br>
-			<li {% if current[1] == 'actualizaralumno.html' %}class='current'{% endif %}><a href="/actualizaralumno.html">Actualizar_alumno</a></li> <br>
             
 		</ul>
 	</nav>
