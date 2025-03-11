@@ -1,0 +1,7 @@
+<ul>
+    {% for alumno in site.data.mediasalumno %}
+      <li>
+        <strong>{{ alumno.nombre }}</strong> (<span>{{ alumno.media }}</span>)
+      </li>
+    {% endfor %}
+</ul>
