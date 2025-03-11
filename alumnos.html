@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas de Estudiantes</title>
+    <title></title>
     <style>
         .nota-baja {
             color: red;
@@ -11,8 +11,8 @@
     </style>
 </head>
 <body>
-    <h1>Notas de Estudiantes</h1>
-    <table border="1">
+    <h1>Notas de alumno</h1>
+    <table>
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -22,12 +22,12 @@
             </tr>
         </thead>
         <tbody>
-            {% for estudiante in site.data.notas %}
+            {% for alumno in site.data.listadoalumnos %}
             <tr>
-                <td>{{ estudiante.nombre }}</td>
-                <td class="{% if estudiante.nota1 < 5 %}nota-baja{% endif %}">{{ estudiante.nota1 }}</td>
-                <td class="{% if estudiante.nota2 < 5 %}nota-baja{% endif %}">{{ estudiante.nota2 }}</td>
-                <td class="{% if estudiante.nota3 < 5 %}nota-baja{% endif %}">{{ estudiante.nota3 }}</td>
+                <td>{{ alumno.nombre }}</td>
+                <td class="{% if estudiante.nota1 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</td>
+                <td class="{% if estudiante.nota2 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</td>
+                <td class="{% if estudiante.nota3 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</td>
             </tr>
             {% endfor %}
         </tbody>
