@@ -1,8 +1,13 @@
 {% for alumno in site.data.listadoalumnos %}
-        <p>
-            <strong>{{ alumno.nombre }}</strong> -  
-            Nota 1: <span class="{% if alumno.nota1 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</span>,  
-            Nota 2: <span class="{% if alumno.nota2 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</span>,  
-            Nota 3: <span class="{% if alumno.nota3 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</span>
-        </p>
-    {% endfor %}
+    {% assign nota1 = alumno.nota1 | plus: 0 %}
+    {% assign nota2 = alumno.nota2 | plus: 0 %}
+    {% assign nota3 = alumno.nota3 | plus: 0 %}
+
+    <p>
+        <strong>{{ alumno.nombre }}</strong> -  
+        Nota 1: <span {% if nota1 < 5 %}style="color: red;"{% endif %}>{{ nota1 }}</span>,  
+        Nota 2: <span {% if nota2 < 5 %}style="color: red;"{% endif %}>{{ nota2 }}</span>,  
+        Nota 3: <span {% if nota3 < 5 %}style="color: red;"{% endif %}>{{ nota3 }}</span>
+    </p>
+{% endfor %}
+
