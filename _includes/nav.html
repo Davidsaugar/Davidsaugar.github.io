@@ -1,13 +1,12 @@
 <div id="nav-wrapper">
-	<!-- Nav -->
 	<nav id="nav">
 		<ul>
 			{% assign current = page.url | downcase | split: '/' %}
-			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="/index.html">Homepage</a></li>
-			<li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="/blog">Blog</a></li>
-			<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="/left-sidebar.html">Left Sidebar</a></li>
-			<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="/right-sidebar.html">Right Sidebar</a></li>
-			<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="/no-sidebar.html">No Sidebar</a></li>
+			<li {% if current[1] == 'alumnos.html' %}class='current'{% endif %}><a href="/alumnos.html">Alumnos</a></li> <br>
+			<li {% if current[1] == 'deletealumno.html' %}class='current'{% endif %}><a href="/deletealumno.html">Delete_Alumno</a></li> <br>
+			<li {% if current[1] == 'insertalumno.html' %}class='current'{% endif %}><a href="/insertalumno.html">Insert_alumno</a></li> <br>
+			<li {% if current[1] == 'selectalumno.html' %}class='current'{% endif %}><a href="/selectalumno.html">Select_alumno</a></li> <br>
+            <li {% if current[1] == 'alumnosmedia.html' %}class='current'{% endif %}><a href="/alumnosmedia.html">Media_alumnos</a></li>
 		</ul>
 	</nav>
 </div>
