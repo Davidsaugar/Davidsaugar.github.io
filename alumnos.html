@@ -25,9 +25,9 @@
             {% for alumno in site.data.listadoalumnos %}
             <tr>
                 <td>{{ alumno.nombre }}</td>
-                <td class="{% if estudiante.nota1 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</td>
-                <td class="{% if estudiante.nota2 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</td>
-                <td class="{% if estudiante.nota3 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</td>
+                <td class="{% if alumno.nota1 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</td>
+                <td class="{% if alumno.nota2 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</td>
+                <td class="{% if alumno.nota3 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</td>
             </tr>
             {% endfor %}
         </tbody>
