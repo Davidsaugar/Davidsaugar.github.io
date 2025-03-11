@@ -1,32 +1,6 @@
 ---
-layout: default
+layout: listaalumnos
 title: Notas de Alumnos
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas de Alumnos</title>
-    <style>
-        .nota-baja {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1>Notas de Alumnos</h1>
-
-    {% for alumno in site.data.listadoalumnos %}
-        <p>
-            <strong>{{ alumno.nombre }}</strong> -  
-            Nota 1: <span class="{% if alumno.nota1 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota1 }}</span>,  
-            Nota 2: <span class="{% if alumno.nota2 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota2 }}</span>,  
-            Nota 3: <span class="{% if alumno.nota3 | plus: 0 < 5 %}nota-baja{% endif %}">{{ alumno.nota3 }}</span>
-        </p>
-    {% endfor %}
-
-</body>
-</html>
 
