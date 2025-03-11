@@ -15,21 +15,22 @@ title: Alumnos
     </tr>
   </thead>
   <tbody>
-    {% for alumno in site.data.listadoalumnos %}
+    {% for alumno in site.data.alumnos %}
       <tr>
         <td>{{ alumno.nombre }}</td>
-        <td style="color: {% if alumno.nota1 | plus: 0 < 5 %} red {% else %} black {% endif %};">
+        <td style="color: {% if alumno.nota1 | to_number < 5 %} red {% else %} black {% endif %};">
           {{ alumno.nota1 }}
         </td>
-        <td style="color: {% if alumno.nota2 | plus: 0 < 5 %} red {% else %} black {% endif %};">
+        <td style="color: {% if alumno.nota2 | to_number < 5 %} red {% else %} black {% endif %};">
           {{ alumno.nota2 }}
         </td>
-        <td style="color: {% if alumno.nota3 | plus: 0 < 5 %} red {% else %} black {% endif %};">
+        <td style="color: {% if alumno.nota3 | to_number < 5 %} red {% else %} black {% endif %};">
           {{ alumno.nota3 }}
         </td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
+
 
 
