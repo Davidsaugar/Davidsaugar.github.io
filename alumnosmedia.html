@@ -19,12 +19,12 @@ title: "Alumnos_Media"
 <h1>{{ page.title }}</h1>
 
 
-<h2>listado de alumnos</h2>
+<h2>Media de alumnos</h2>
 
 <ul>
     {% for alumno in site.data.mediasalumno %}
       <li>
-        <strong>{{ alumno.name }}</strong> (<span>{{ alumno.media }}</span>)
+        <strong>{{ alumno.nombre }}</strong> (<span>{{ alumno.media }}</span>)
       </li>
     {% endfor %}
 </ul>
